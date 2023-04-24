@@ -34,7 +34,6 @@ async def get_weather(lat, lon, api_key):
             openweather = await response.json()
             if not response.ok:
                 return 'Сервис недоступен в данный момент. Попробуйте позже.'
-    print('openweather', openweather)
     wind_direction = {
         0: 'северный',
         45: 'северо-восточный',
